@@ -138,7 +138,7 @@ int main(int argc, char **argv)
             {
                 printf("\tVALID ROUND\n");
             }
-
+            free(cubes[0]);
             free(cubes);
         }
         if (validGame == 1)
@@ -146,13 +146,13 @@ int main(int argc, char **argv)
 
         printf("Game %d Power: R%d|G%d|B%d %d\n", gameNumber, minRed, minGreen, minBlue, minRed * minGreen * minBlue);
         totalPower += minRed * minGreen * minBlue;
-
+        free(rounds[0]);
         free(rounds);
     }
 
     printf("RESULT %d\n", total);
     printf("Total Power %d\n", totalPower);
-
+    free(tokens[0]);
     free(tokens);
     free(contents);
 
