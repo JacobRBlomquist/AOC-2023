@@ -4,7 +4,7 @@ NAME := "DAY-1"
 CC := gcc
 
 # Compiler flags
-CFLAGS := -Wall -Wextra -std=c99
+CFLAGS := -Wall -Wextra -std=c99 -g
 
 # Source files
 SRC := main.c
